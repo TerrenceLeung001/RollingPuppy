@@ -1,11 +1,22 @@
-JSON
 {
+  "name": "RollingPuppy Test",
+  "short_name": "RollingPuppy",
+  "description": "Testing the involution engine",
   "start_url": "/RollingPuppy/",
   "scope": "/RollingPuppy/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#FF9900",
   "icons": [
     {
-      "src": "/RollingPuppy/icon.png",
+      "src": "https://via.placeholder.com/192/FF9900/FFFFFF?text=RP",
       "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://via.placeholder.com/512/FF9900/FFFFFF?text=RollingPuppy",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
