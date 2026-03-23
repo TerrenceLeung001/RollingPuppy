@@ -1,13 +1,10 @@
+JSON
 {
-  "name": "RollingPuppy Test",
-  "short_name": "RP Test",
-  "start_url": ".",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "start_url": "/RollingPuppy/",
+  "scope": "/RollingPuppy/",
   "icons": [
     {
-      "src": "https://via.placeholder.com/192",
+      "src": "/RollingPuppy/icon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
