@@ -11,8 +11,9 @@
     <h1>testing</h1>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js');
-        }
+            // Registering with the correct scope
+            navigator.serviceWorker.register('/RollingPuppy/service-worker.js', { scope: '/RollingPuppy/' });
+          }
     </script>
 </body>
 </html>
