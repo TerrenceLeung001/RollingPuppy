@@ -1,24 +1,13 @@
-const CACHE_NAME = 'rolling-puppy-v1';
-const ASSETS = [
-  '/RollingPuppy/',
-  '/RollingPuppy/index.html',
-  '/RollingPuppy/manifest.json'
-];
-
-// Install event: caching the basic files
+// Minimal Service Worker for PWA Installation Testing
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(ASSETS);
-    })
-  );
+  console.log('Service Worker: Installed');
 });
 
-// Fetch event: required for PWA "Installable" status
+self.addEventListener('activate', (event) => {
+  console.log('Service Worker: Activated');
+});
+
+// A fetch listener is REQUIRED for the install prompt to trigger
 self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
-  );
+  // We don't need to do anything here for a basic test
 });
