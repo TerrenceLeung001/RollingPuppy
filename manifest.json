@@ -1,9 +1,8 @@
 {
   "name": "RollingPuppy Test",
   "short_name": "RollingPuppy",
-  "description": "Testing the involution engine",
-  "start_url": "/RollingPuppy/",
-  "scope": "/RollingPuppy/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#FF9900",
