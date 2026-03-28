@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RollingPuppy Test</title>
-    <link rel="manifest" href="/RollingPuppy/manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#FF9900">
 </head>
 <body>
-    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
-        <h1>RollingPuppy PWA: Testing</h1>
-        <p>If you see the "Install" icon in your browser bar, it works!</p>
-    </div>
+    <h1>Testing</h1>
+    <p>If you see 'Add to Home Screen' or the Install icon, the configuration is correct.</p>
 
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                // Registering service-worker.js with the correct scope for GitHub Pages
-                navigator.serviceWorker.register('/RollingPuppy/service-worker.js', { scope: '/RollingPuppy/' })
-                .then(reg => console.log('Service Worker registered!', reg))
-                .catch(err => console.log('Service Worker failed:', err));
+                navigator.serviceWorker.register('/service-worker.js', { scope: '/' })
+                .then(reg => console.log('SW Registered', reg))
+                .catch(err => console.error('SW Failed', err));
             });
         }
     </script>
